@@ -9,7 +9,6 @@
 
     html, body {
         height: 100%;
-        background: #34495e;
     }
     .tamaño{
         height: 200px;
@@ -23,9 +22,16 @@
     .horas{
      margin-left: 50%;
     }
+    .bg-color{
+       background-color: rgb(235, 228, 228);
+       box-shadow: 0 0 11px rgb(33,33,33,.2);
+       font-family:Open-Sans;
+      
+    }
 </style>
 </head>
 <body>
+    
         <div class="card text-center">
                 <div class="card-header">
                   Información
@@ -38,17 +44,32 @@
                   <p class="card-text hora" id="hora"> <p>:</p> <p class="card-text" id="minuto"></p></p>
                 </div>
                 </div>
-                <div>
-                    <h3>Resgistro total</h3>
-                    <p id = "registro" class="colum"></p>
+                <img src="img/imagenes/02.png" class="img-fluid"/>
+                <hr>
+                <div class="container bg-color justify-content-center">
+                    <h1><b>Resgistro total</b></h1>
+                      <div class="row justify-content-center">
+                          <div class="col-md-offset-5 col-md-2 col-md-offset-5">
+                                <p id = "registro" class="colum"></p></rect>
+                          </div>
+                      </div>        
+                
                 </div>
                 </div>
                 <div class="card-footer text-muted">
                         Clase de arquitectura
                       </div>
               </div>
-   
-                        <h1 class="texto"></h1>
+            
+              
+              <h1 class="texto"></h1>
+               
+              
+              
+                
+                
+            
+                        
       
 
 <script src="/socket.io/socket.io.js" charset="utf-8"></script>

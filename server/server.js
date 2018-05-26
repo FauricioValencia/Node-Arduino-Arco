@@ -36,6 +36,8 @@ parser.on('data',function (data){
 
     let hora =d.getHours();
     let minuto =d.getMinutes();
+
+    let juntos = `      ${data} - ${hora}: ${minuto}`
     io.emit('hora',hora);
     io.emit('minuto',minuto);
     io.emit('registro',registro);
@@ -46,8 +48,9 @@ parser.on('data',function (data){
     //     data="no hay movimiento"
     // }
     io.emit('dato',data);//se coloca los datos que se vana  enviar
+    io.write("\n");
    // console.log(data);
-   registro.push(data);
+   registro.push(juntos);
    //console.log(registro);
 
 });
