@@ -1,0 +1,12 @@
+{
+  "name": "jhonny-five",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "reset": "firmata-party uno --debug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
